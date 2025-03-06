@@ -27,3 +27,30 @@ header {
     cursor: pointer;
     transition: 0.8s;
 }
+
+#highlights-section{
+    border: 2px solid olivedrab;
+    width: 70%;
+    margin: 0 auto;
+}
+
+ #highlights-section > h2 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 2px 2px 8px #af3d3d;
+    margin-bottom: 25px;
+ }
+
+ #highlights-section > p {
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(99, 84, 84);
+    text-align: center;
+    margin-bottom: 32px;
+ }
+
+ #buy-now-button {
+    display: flex;
+    justify-content: center;
+ }
