@@ -42,11 +42,11 @@
                 <div id="search-container">
                     <div class="search-bar">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="Search Your Phone">
+                        <input id="search-input-field" type="text" placeholder="Search Your Phone">
                     </div>
 
                     <div class="search-button">
-                        <button class="btn">Search</button>
+                        <button onclick="handleSearch()" class="btn">Search</button>
                     </div>
                 </div>
            </section>
@@ -157,5 +157,7 @@
                 </div>
             </section>
     </main>
+
+    <script src="./js/store.js"></script>
 </body>
 </html>
