@@ -133,7 +133,7 @@ header {
 
 .card-image img {
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
 
 .card-title {
@@ -161,4 +161,140 @@ header {
     display: flex;
     justify-content: center;
 }
+
+#loading-section {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-brand h1 {
+    font-size: 24px;
+    text-align: start;
+    margin: 0;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #6e6767;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-social i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 1px solid #444;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: rgb(48, 83, 222);
+}
+
+#right-aside {
+    text-align: end;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 

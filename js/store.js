@@ -1,10 +1,23 @@
 
 function handleSearch(){
+    // loading animation starts 
+    loadingAnimationToggle(true);
     const searchInputElement = document.getElementById("search-input-field")
     const searchInputValue = searchInputElement.value;
 
     loadPhone(searchInputValue);
 }
+
+function loadingAnimationToggle(isLoading) {
+    const loaderAnimation = document.getElementById('loader-animation');
+    if(isLoading) {
+        loaderAnimation.classList.remove("hidden");
+    }
+    else {
+        loaderAnimation.classList.add("hidden");
+    }
+}
+
 // async function loadPhone2 (searchText) {
 //     const res = await fetch("https://openapi.programming-hero.com/api/phones?search=samsung")
 //     const data = await res.json();
@@ -50,4 +63,6 @@ const displayPhone = (data) => {
 
         cardContainer.appendChild(productCard);
     });
+    // loading animation ends here 
+    loadingAnimationToggle(false);
 };
